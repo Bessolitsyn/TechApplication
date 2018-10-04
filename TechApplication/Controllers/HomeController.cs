@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TechApplication.Models;
 
 namespace TechApplication.Controllers
 {
@@ -25,6 +26,15 @@ namespace TechApplication.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public ViewResult Test()
+        {
+            using (ApplicationDbContext db = new ApplicationDbContext())
+            {
+                return View(db.Roles.ToList());
+
+            }
+
         }
     }
 }

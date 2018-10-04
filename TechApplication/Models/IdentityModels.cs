@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin;
 
 namespace TechApplication.Models
 {
@@ -20,8 +22,7 @@ namespace TechApplication.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+        public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +30,34 @@ namespace TechApplication.Models
         {
             return new ApplicationDbContext();
         }
+    }
+
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() { }
+
+        public string Description { get; set; }
+    }
+
+    class ApplicationRoleManager : RoleManager<ApplicationRole>
+    {
+        public ApplicationRoleManager(RoleStore<ApplicationRole> store) : base(store)
+        {
+        }
+        public static ApplicationRoleManager Create(IdentityFactoryOptions<ApplicationRoleManager> options, IOwinContext context)
+        {
+            return new ApplicationRoleManager(new RoleStore<ApplicationRole>(context.Get<ApplicationDbContext>()));
+        }
+    }
+    public class EditRoleModel
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
+    public class CreateRoleModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
