@@ -11,10 +11,39 @@
 
 
 
-    @foreach (var b in Model)
-    {
+@foreach (var b in Model)
+{
 
-        <p>@b.Id</p>
+    <p>@b.Id</p>
 
 
-    }
+}
+<script>
+	function solutionEdit() {
+        $('#myModal').modal('toggle');
+    
+}
+</script>
+
+<a class="btn" data-toggle="modal" href="#myModal">Запустить пример всплывающего окна</a>
+
+<div class="modal" id="myModal">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Заголовок</h3>
+    </div>
+    <div class="modal-body">
+        <p>Текст…</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Закрыть</a>
+        <a href="#" class="btn btn-primary">Сохранить</a>
+    </div>
+</div>
+
+
+
+
+<div class="col-md-4">
+    <button class="btn btn-primary" data-toggle="modal" onclick="solutionEdit()">Добавить/Изменить данные по расчёту</button>
+</div>
