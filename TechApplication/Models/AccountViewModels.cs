@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace TechApplication.Models
 {
@@ -51,6 +52,7 @@ namespace TechApplication.Models
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
+        [Remote("NameValid", "BookModels", ErrorMessage = "Такой расчет уже существует")]
         public string Email { get; set; }
 
         [Required]
@@ -77,7 +79,7 @@ namespace TechApplication.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
 
@@ -96,7 +98,7 @@ namespace TechApplication.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }

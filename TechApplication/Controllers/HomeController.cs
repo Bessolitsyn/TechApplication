@@ -27,13 +27,11 @@ namespace TechApplication.Controllers
 
             return View();
         }
-        public ViewResult Test()
+        public ActionResult Test()
         {
-            using (ApplicationDbContext db = new ApplicationDbContext())
-            {
-                return View(db.Roles.ToList());
+            ViewBag.Message = "Your contact page.";
 
-            }
+            return View();
 
         }
     }

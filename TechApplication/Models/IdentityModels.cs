@@ -30,6 +30,8 @@ namespace TechApplication.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TechApplication.Models.BookModel> BookModels { get; set; }
     }
 
     public class ApplicationRole : IdentityRole
