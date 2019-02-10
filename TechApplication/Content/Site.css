@@ -2,16 +2,17 @@
 html {
     min-height: 100%;
     background-size: cover; /*Значение cover масштабирует изображение, в зависимости от размеров блока*/
-    background-image: url(/Content/img/bg2.jpg);
+    background-image: url(/Content/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: right bottom; /*Изображение будет обрезано, в зависимости от значений*/
+    background-attachment: fixed;
 }
 
 body {
     background-color: none;
     padding-top: 50px;
     padding-bottom: 20px;
-    background-size: 100% 100%;
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -32,4 +33,21 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.col-md-6 {
+    margin: 1%;
+    width: 48%;
+}
+.col-md-4 {
+    margin: 1%;
+    width: 31%;
+}
+.jumbotron {
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+.index-ul {
+    height:150px;
+    overflow-y: hidden;
 }
