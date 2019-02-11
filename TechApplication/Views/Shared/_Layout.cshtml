@@ -29,13 +29,15 @@
             </div>
         </div>
     </div>
-    <div class="container body-content" > 
-        @RenderBody()
-        <hr />
-        <footer>
-            <p style="color:white;">&copy; @DateTime.Now.Year - Технология инжинириг</p>
-        </footer>
-    </div>
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p style="color:white;">&copy; @DateTime.Now.Year - Технология инжинириг</p>
+            </footer>
+        </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
