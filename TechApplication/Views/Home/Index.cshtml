@@ -12,7 +12,7 @@
 <div class="row">
     <div class="col-md-6"  style="background-color: #9de6fe; color: #0b5b72" >
         <h3>Базовое проектирование</h3>
-        <div class="index-ul">
+        <div class="index-ul" id="p1">
             <ul>
                 <li>Предпроектная проработка, технико-экономическое обоснование</li>
                 <li>Сопровождение заказчика при подготовке ТЗ</li>
@@ -22,24 +22,29 @@
                 <li>Согласование документации с инспектирующими органами (самостоятельное прохождение экспертизы, техническое сопровождение заказчика).</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p class="learn-moree"><label class="btn btn-info btn-xs max" onclick="show('#p1', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+                               <label class="btn btn-info btn-xs min" onclick="hide('#p1', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
-    <div class="col-md-6" style="background-color: #9de6fe; color: #0b5b72" >
+    <div class="col-md-6" style="background-color: #9de6fe; color: #0b5b72">
         <h3>Рабочее проектирование</h3>
-        <div class="index-ul">
+        <div class="index-ul" id="p2">
             <ul>
                 <li>Выполнение всех разделов Рабочей документации (РД), в соответствии с требованиями отечественных норм и правил</li>
                 <li>Комплексное выполнение рабочего проектирования по иностранным нормам и нормам заказчика, в том числе и отдельных разделов</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p class="learn-moree">
+            <label class="btn btn-info btn-xs max" onclick="show('#p2', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+            <label class="btn btn-info btn-xs min" onclick="hide('#p2', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-4" style="background-color: #def9ff; color: #0b5b72">
         <h4>Технология</h4>
-        <div class="index-ul">
+        <div class="index-ul" id="p3">
             <ul>
                 <li>Выполнение материальных, тепловых и гидравлических расчетов</li>
                 <li>Разработка «интеллектуальных» монтажно-технологических схем (P&ID)</li>
@@ -48,11 +53,14 @@
                 <li>Подготовка пояснительных записок, регламентов, инструкций</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p class="learn-moree">
+            <label class="btn btn-info btn-xs max" onclick="show('#p3', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+            <label class="btn btn-info btn-xs min" onclick="hide('#p3', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
     <div class="col-md-4" style="background-color: #def9ff; color: #0b5b72">
         <h4>Строительное проектирование</h4>
-        <div class="index-ul">
+        <div class="index-ul" id="p4">
             <ul>
                 <li>Выполнение материальных, тепловых и гидравлических расчетов</li>
                 <li>Разработка «интеллектуальных» монтажно-технологических схем (P&ID)</li>
@@ -61,11 +69,14 @@
                 <li>Подготовка пояснительных записок, регламентов, инструкций</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p class="learn-moree">
+            <label class="btn btn-info btn-xs max" onclick="show('#p4', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+            <label class="btn btn-info btn-xs min" onclick="hide('#p4', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
     <div class="col-md-4" style="background-color: #def9ff; color: #0b5b72">
         <h4>Электротехника</h4>
-        <div class="index-ul">
+        <div class="index-ul" id="p5">
             <ul>
                 <li>Проектирование трансформаторных и распределительных подстанций до 35 кВ включительно</li>
                 <li>Разработка структурных, функциональных и принципиальных схем электроснабжения</li>
@@ -76,13 +87,16 @@
                 <li>Проектирование электрообогрева</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p class="learn-moree">
+            <label class="btn btn-info btn-xs max" onclick="show('#p5', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+            <label class="btn btn-info btn-xs min" onclick="hide('#p5', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4" style="background-color: #def9ff; color: #0b5b72">
         <h4>КИПиА</h4>
-        <div class="index-ul">
+        <div class="index-ul" id="p6">
             <ul>
                 <li>Разработка опросных листов и технические спецификаций на приборы и клапаны</li>
                 <li>Подготовка перечня входов/выходов (перечень параметров АСУТП с указанием уставок сигнализиции и блокировок)</li>
@@ -96,6 +110,9 @@
                 <li>Логические таблицы/схемы</li>
             </ul>
         </div>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p class="learn-moree">
+            <label class="btn btn-info btn-xs max" onclick="show('#p6', event.currentTarget)">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+            <label class="btn btn-info btn-xs min" onclick="hide('#p6', event.currentTarget)">Свернуть <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></label>
+        </p>
     </div>
 </div>

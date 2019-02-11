@@ -36,18 +36,27 @@ textarea {
 }
 
 .col-md-6 {
-    margin: 1%;
-    width: 48%;
+    border: 1px solid gray;
+    /*margin: 1%;*/
+    /*width: 49%;*/
 }
 .col-md-4 {
-    margin: 1%;
-    width: 31%;
+    border: 1px solid gray;
+   /* margin: 1%;
+    width: 31%;*/
 }
 .jumbotron {
     margin-top: 30px;
     margin-bottom:30px;
 }
 .index-ul {
-    height:150px;
+    height:70px;
     overflow-y: hidden;
+}
+.learn-moree {
+    padding-top: 15px;
+    text-align:right;
+}
+.min {
+    display:none;
 }
