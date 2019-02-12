@@ -9,7 +9,7 @@ function show(elId, target) {
     
 };
 function hide(elId, target) {
-    $(elId).css('height', '70px');
+    $(elId).css('height', '90px');
     $(target).hide();
     var ParenNode = $(target).parent('.learn-moree')[0];
     $(ParenNode).find('.max').show();
