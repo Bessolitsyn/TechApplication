@@ -22,8 +22,9 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.8);
-    
+    height: 80%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -40,24 +41,26 @@ textarea {
     max-width: 280px;
 }
 
-.line2 {
+.line2- {
     border: solid 1px white;
     background-color: #068bce;
     color: white;
     font-family: 'Open Sans';
+    margin-bottom: 15px
     /*margin: 1%;*/
     /*width: 49%;*/
 }
-.line3 {
+.line3- {
     align-content: center;
     /*border: 1px inset #eeeeee;*/
     background-color: white;
     color: #808080;
+    padding-top: 15px;
+    /*
     margin-top: 15px;
     margin-bottom: 30px;
-    /* margin: 1%;
-    width: 31%;*/
-    font-size: 12px;
+*/
+    font-size: 13px;
     font-weight: lighter;
     font-family: 'Open Sans';
 }
@@ -70,7 +73,7 @@ textarea {
     overflow-y: hidden;
     padding-right: 10px;
 }
-.learn-moree {
+.learn-moree- {
     padding-top: 20px;
     text-align:right;
     padding-right:10px;
@@ -81,7 +84,7 @@ textarea {
 .row {
     padding-left:20px;
     padding-right:20px;
-    padding-top: 0px;
+    
    
 }
 
@@ -95,4 +98,11 @@ h2, h3, h4, h5 {
 .btn-info {
     background-color: #068bce;
     font-size: 10px;
+}
+.contacts {
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Open Sans', serif;
+    color: white;
+    width:80%;
 }
