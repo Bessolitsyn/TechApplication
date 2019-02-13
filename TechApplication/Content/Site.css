@@ -41,12 +41,13 @@ textarea {
     max-width: 280px;
 }
 
-.line2- {
-    border: solid 1px white;
+.line2 {
+    /*border: solid 1px white;*/
     background-color: #068bce;
     color: white;
     font-family: 'Open Sans';
-    margin-bottom: 15px
+    font-size: 14px;
+    margin: -10px;
     /*margin: 1%;*/
     /*width: 49%;*/
 }
@@ -69,12 +70,15 @@ textarea {
     margin-bottom:30px;
 }
 .index-ul {
-    height: 90px;
     overflow-y: hidden;
     padding-right: 10px;
 }
-.learn-moree- {
-    padding-top: 20px;
+.height90px {
+    height: 90px;
+}
+
+.learn-moree {
+    padding-top: 15px;
     text-align:right;
     padding-right:10px;
 }

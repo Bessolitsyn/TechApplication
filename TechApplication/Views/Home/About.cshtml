@@ -8,27 +8,35 @@
     <div class="col-md-12">
         <div style="font-family: 'Open Sans', sans-serif; padding:100px 40px 40px 80px;">
             <h1>Технология инжиниринг</h1>
-            <p class="lead" style="font-style: italic;">
+            <div class="lead" style="font-style: italic;">
                 Опытная и профессиональная проектная организация, предлагающая услуги по выполнению полного комплекса проектных работ
                 на строительных и технологических объектах предприятий химической, нефтехимической, нефтеперерабатывающей, пищевой промышленности,
                 объектах добычи, транспортировки и хранения нефтепродуктов, очистки газов и др.
-            </p>
+            </div>
         </div>
         <p></p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4">
-        <div class="card border" style="width: 80%; ">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="card border">
             <div class="card-body">
                 <h5 class="card-title">Установка нормализации нефтяных экстрактов</h5>
-                <p class="card-text">
-                   </p>
-                <label class="btn btn-info btn-xs max">Узнать больше <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+                <div class="card-text index-ul height90px" id="p">
+                    Опытная и профессиональная проектная организация, предлагающая услуги по выполнению полного комплекса проектных работ
+                    на строительных и технологических объектах предприятий химической, нефтехимической, нефтеперерабатывающей, пищевой промышленности,
+                    объектах добычи, транспортировки и хранения нефтепродуктов, очистки газов и др.
+                </div>
+                </br>
+                <label class="btn btn-info btn-xs max" onclick="show('#p', event.currentTarget)">Узнать больше</label>
+                <label class="btn btn-info btn-xs min" onclick="hide('#p', event.currentTarget)">Свернуть</label>
             </div>
+            
         </div>
     </div>
+
+
+
     <div class="col-md-4">
     </div>
     <div class="col-md-4">
@@ -37,6 +45,25 @@
 <div class="row">
     <div class="col-md-4">
     </div>
+    <div class="col-md-4">
+        <div class="card border">
+            <div class="card-body">
+                <h5 class="card-title">Установка нормализации нефтяных экстрактов</h5>
+                <div class="card-text" id="p2">
+                    Опытная и профессиональная проектная организация, предлагающая услуги по выполнению полного комплекса проектных работ
+                    на строительных и технологических объектах предприятий химической, нефтехимической, нефтеперерабатывающей, пищевой промышленности,
+                    объектах добычи, транспортировки и хранения нефтепродуктов, очистки газов и др.
+                </div>
+
+            </div>
+            <a class="btn btn-info btn-xs max" onclick="show('#p2', event.currentTarget)">Узнать больше</a>
+            <a class="btn btn-info btn-xs min" onclick="hide('#p2', event.currentTarget)">Свернуть</a>
+
+        </div>
+    </div>
+
+
+
     <div class="col-md-4">
     </div>
     <div class="col-md-4">
