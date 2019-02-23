@@ -3,17 +3,21 @@ html {
     min-height: 100%;
     background-color: #068bce;
     font-size: 12px;
+    background-image: url(/Content/img/bg4.jpg);
+    background-repeat: no-repeat;
+    /*background-size: cover; /*Значение cover масштабирует изображение, в зависимости от размеров блока*/
+    /*background-position: right bottom; /*Изображение будет обрезано, в зависимости от значений*/
 }
 
 
 body {
+    /*
     background-image: url(/Content/img/bg4.jpg);
-    /*background-size: cover; /*Значение cover масштабирует изображение, в зависимости от размеров блока*/
     background-repeat: no-repeat;
-    
+
+        */
     /*background-attachment: fixed;
     /*background-position: right bottom; /*Изображение будет обрезано, в зависимости от значений*/
-   
     /*padding-top: 50px;
     padding-bottom: 20px;*/
 }
@@ -23,7 +27,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     height: 80%;
 }
 
@@ -41,24 +45,37 @@ textarea {
     max-width: 280px;
 }
 
+.amenu {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
 .line2 {
     /*border: solid 1px white;*/
     background-color: #068bce;
     color: white;
     font-family: 'Open Sans';
     font-size: 14px;
-    margin: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 35px;
     /*margin: 1%;*/
     /*width: 49%;*/
 }
-.line3- {
+.line3 {
     align-content: center;
     /*border: 1px inset #eeeeee;*/
-    background-color: white;
     color: #808080;
-    padding-top: 15px;
-    /*
+    margin-left: -10px;
+    margin-right: -10px;
     margin-top: 15px;
+    background-color: transparent;
+    /*
+    padding-top: 15px;
     margin-bottom: 30px;
 */
     font-size: 13px;
@@ -75,7 +92,10 @@ textarea {
 }
 .height90px {
     height: 90px;
+
+   
 }
+
 
 .learn-moree {
     padding-top: 15px;
