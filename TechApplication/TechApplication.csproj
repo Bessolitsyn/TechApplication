@@ -250,7 +250,15 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="image\bu.png" />
+    <Content Include="image\bu2.png" />
+    <Content Include="image\el.png" />
+    <Content Include="image\ki.png" />
+    <Content Include="image\pi.png" />
+    <Content Include="image\pi2.png" />
     <Content Include="image\te.png" />
+    <Content Include="image\te2.png" />
+    <Content Include="image\te3.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

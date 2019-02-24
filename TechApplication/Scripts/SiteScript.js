@@ -2,7 +2,7 @@
 function show(elId, target) {
 
     //$('#' + elId).removeClass('height90px');
-    $('.' + elId).removeClass('col-md-4');
+    $('.' + elId).removeClass('col-md-3');
     $('.' + elId).addClass('col-md-12');
     $('#' + elId).show()
     $('.image' + elId).hide();
@@ -15,7 +15,7 @@ function show(elId, target) {
 function hide(elId, target) {
     //$('#' + elId).addClass('height90px');
     $('.' + elId).removeClass('col-md-12');
-    $('.' + elId).addClass('col-md-4');
+    $('.' + elId).addClass('col-md-3');
     $('#' + elId).hide()
     $('.image' + elId).show();
 
