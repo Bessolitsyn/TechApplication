@@ -27,7 +27,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.0);
     height: 80%;
 }
 
@@ -52,6 +52,15 @@ textarea {
     font-weight: 400;
 }
 
+.card {
+  
+    border: 1px solid rgba(255, 255, 255, 0.250);
+
+}
+
+.card-body {
+    margin:-15px;
+}
 
 
 .line2 {
@@ -60,18 +69,27 @@ textarea {
     color: white;
     font-family: 'Open Sans';
     font-size: 14px;
+
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 35px;
     /*margin: 1%;*/
     /*width: 49%;*/
 }
+.h4 {
+    padding-top: 15px;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+h4 {
+    color:white;
+}
 .line3 {
     align-content: center;
     /*border: 1px inset #eeeeee;*/
-    color: #808080;
-    margin-left: -10px;
-    margin-right: -10px;
+    color: white;
+    font-family: 'Open Sans';
+    margin-left: -1px;
+    margin-right: -1px;
     margin-top: 15px;
     background-color: transparent;
     /*
@@ -109,6 +127,9 @@ textarea {
 }
 .min {
     display:none;
+}
+.max {
+    margin-top: 130px;
 }
 .row {
     padding-left:20px;
